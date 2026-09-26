@@ -1,0 +1,24 @@
+{
+  "n_time": 7,
+  "n_lat": 16,
+  "n_lon": 16,
+  "lead_times": [
+    6,
+    24,
+    72,
+    168
+  ],
+  "variables": [
+    "rainfall",
+    "temperature",
+    "wind"
+  ],
+  "sources": [
+    "ensemble",
+    "nwp",
+    "ai"
+  ],
+  "skill_rows": 512,
+  "weight_rows": 192,
+  "blend_skill_rows": 896
+}

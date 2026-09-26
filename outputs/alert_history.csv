@@ -1,0 +1,421 @@
+district,hazard,variable,forecast_date,lead_time_h,forecast_value,threshold,confidence_pct,severity,sector,recommended_action,accuracy_status,generated_at
+South-West Coast,heavy_rainfall,rainfall,2026-09-19,24,,50.0,51.0,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T18:12:05Z
+South Peninsular West,heavy_rainfall,rainfall,2026-09-19,24,,50.0,44.4,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T18:12:05Z
+South Peninsular East,heavy_rainfall,rainfall,2026-09-19,24,,50.0,59.8,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T18:12:05Z
+South-East Coast,heavy_rainfall,rainfall,2026-09-19,24,,50.0,56.3,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T18:12:05Z
+Central West Deccan,heavy_rainfall,rainfall,2026-09-19,24,,50.0,40.2,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T18:12:05Z
+East Coast Central,heavy_rainfall,rainfall,2026-09-19,24,,50.0,47.7,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T18:12:05Z
+North-West Semi-arid,heavy_rainfall,rainfall,2026-09-19,24,,50.0,65.0,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T18:12:05Z
+North-East Bay,heavy_rainfall,rainfall,2026-09-19,24,,50.0,39.1,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T18:12:05Z
+North-West Arid,heavy_rainfall,rainfall,2026-09-19,24,,50.0,54.9,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T18:12:05Z
+Northern Plains,heavy_rainfall,rainfall,2026-09-19,24,,50.0,56.1,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T18:12:05Z
+Upper Gangetic Plains,heavy_rainfall,rainfall,2026-09-19,24,,50.0,35.8,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T18:12:05Z
+North-East Hills,heavy_rainfall,rainfall,2026-09-19,24,,50.0,43.9,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T18:12:05Z
+South-West Coast,heavy_rainfall,rainfall,2026-09-19,24,,50.0,51.0,WATCH,Aviation,Stay informed. Monitor convective activity and low-visibility conditions.,false_alarm,2026-09-25T18:12:39Z
+South Peninsular West,heavy_rainfall,rainfall,2026-09-19,24,,50.0,44.4,WATCH,Aviation,Stay informed. Monitor convective activity and low-visibility conditions.,false_alarm,2026-09-25T18:12:39Z
+South Peninsular East,heavy_rainfall,rainfall,2026-09-19,24,,50.0,59.8,WATCH,Aviation,Stay informed. Monitor convective activity and low-visibility conditions.,false_alarm,2026-09-25T18:12:39Z
+South-East Coast,heavy_rainfall,rainfall,2026-09-19,24,,50.0,56.3,WATCH,Aviation,Stay informed. Monitor convective activity and low-visibility conditions.,false_alarm,2026-09-25T18:12:39Z
+Central West Deccan,heavy_rainfall,rainfall,2026-09-19,24,,50.0,40.2,WATCH,Aviation,Stay informed. Monitor convective activity and low-visibility conditions.,false_alarm,2026-09-25T18:12:39Z
+East Coast Central,heavy_rainfall,rainfall,2026-09-19,24,,50.0,47.7,WATCH,Aviation,Stay informed. Monitor convective activity and low-visibility conditions.,false_alarm,2026-09-25T18:12:39Z
+North-West Semi-arid,heavy_rainfall,rainfall,2026-09-19,24,,50.0,65.0,WATCH,Aviation,Stay informed. Monitor convective activity and low-visibility conditions.,false_alarm,2026-09-25T18:12:39Z
+North-East Bay,heavy_rainfall,rainfall,2026-09-19,24,,50.0,39.1,WATCH,Aviation,Stay informed. Monitor convective activity and low-visibility conditions.,false_alarm,2026-09-25T18:12:39Z
+North-West Arid,heavy_rainfall,rainfall,2026-09-19,24,,50.0,54.9,WATCH,Aviation,Stay informed. Monitor convective activity and low-visibility conditions.,false_alarm,2026-09-25T18:12:39Z
+Northern Plains,heavy_rainfall,rainfall,2026-09-19,24,,50.0,56.1,WATCH,Aviation,Stay informed. Monitor convective activity and low-visibility conditions.,false_alarm,2026-09-25T18:12:39Z
+Upper Gangetic Plains,heavy_rainfall,rainfall,2026-09-19,24,,50.0,35.8,WATCH,Aviation,Stay informed. Monitor convective activity and low-visibility conditions.,false_alarm,2026-09-25T18:12:39Z
+North-East Hills,heavy_rainfall,rainfall,2026-09-19,24,,50.0,43.9,WATCH,Aviation,Stay informed. Monitor convective activity and low-visibility conditions.,false_alarm,2026-09-25T18:12:39Z
+South-West Coast,heavy_rainfall,rainfall,2026-09-19,24,,50.0,51.0,WATCH,Aviation,Stay informed. Monitor convective activity and low-visibility conditions.,false_alarm,2026-09-25T18:12:49Z
+South Peninsular West,heavy_rainfall,rainfall,2026-09-19,24,,50.0,44.4,WATCH,Aviation,Stay informed. Monitor convective activity and low-visibility conditions.,false_alarm,2026-09-25T18:12:49Z
+South Peninsular East,heavy_rainfall,rainfall,2026-09-19,24,,50.0,59.8,WATCH,Aviation,Stay informed. Monitor convective activity and low-visibility conditions.,false_alarm,2026-09-25T18:12:49Z
+South-East Coast,heavy_rainfall,rainfall,2026-09-19,24,,50.0,56.3,WATCH,Aviation,Stay informed. Monitor convective activity and low-visibility conditions.,false_alarm,2026-09-25T18:12:49Z
+Central West Deccan,heavy_rainfall,rainfall,2026-09-19,24,,50.0,40.2,WATCH,Aviation,Stay informed. Monitor convective activity and low-visibility conditions.,false_alarm,2026-09-25T18:12:49Z
+East Coast Central,heavy_rainfall,rainfall,2026-09-19,24,,50.0,47.7,WATCH,Aviation,Stay informed. Monitor convective activity and low-visibility conditions.,false_alarm,2026-09-25T18:12:49Z
+North-West Semi-arid,heavy_rainfall,rainfall,2026-09-19,24,,50.0,65.0,WATCH,Aviation,Stay informed. Monitor convective activity and low-visibility conditions.,false_alarm,2026-09-25T18:12:49Z
+North-East Bay,heavy_rainfall,rainfall,2026-09-19,24,,50.0,39.1,WATCH,Aviation,Stay informed. Monitor convective activity and low-visibility conditions.,false_alarm,2026-09-25T18:12:49Z
+North-West Arid,heavy_rainfall,rainfall,2026-09-19,24,,50.0,54.9,WATCH,Aviation,Stay informed. Monitor convective activity and low-visibility conditions.,false_alarm,2026-09-25T18:12:49Z
+Northern Plains,heavy_rainfall,rainfall,2026-09-19,24,,50.0,56.1,WATCH,Aviation,Stay informed. Monitor convective activity and low-visibility conditions.,false_alarm,2026-09-25T18:12:49Z
+Upper Gangetic Plains,heavy_rainfall,rainfall,2026-09-19,24,,50.0,35.8,WATCH,Aviation,Stay informed. Monitor convective activity and low-visibility conditions.,false_alarm,2026-09-25T18:12:49Z
+North-East Hills,heavy_rainfall,rainfall,2026-09-19,24,,50.0,43.9,WATCH,Aviation,Stay informed. Monitor convective activity and low-visibility conditions.,false_alarm,2026-09-25T18:12:49Z
+South-West Coast,heavy_rainfall,rainfall,2026-09-19,24,,62.5,51.0,WATCH,Aviation,Stay informed. Monitor convective activity and low-visibility conditions.,false_alarm,2026-09-25T18:13:02Z
+South Peninsular West,heavy_rainfall,rainfall,2026-09-19,24,,62.5,44.4,WATCH,Aviation,Stay informed. Monitor convective activity and low-visibility conditions.,false_alarm,2026-09-25T18:13:02Z
+South Peninsular East,heavy_rainfall,rainfall,2026-09-19,24,,62.5,59.8,WATCH,Aviation,Stay informed. Monitor convective activity and low-visibility conditions.,false_alarm,2026-09-25T18:13:02Z
+South-East Coast,heavy_rainfall,rainfall,2026-09-19,24,,62.5,56.3,WATCH,Aviation,Stay informed. Monitor convective activity and low-visibility conditions.,false_alarm,2026-09-25T18:13:02Z
+Central West Deccan,heavy_rainfall,rainfall,2026-09-19,24,,62.5,40.2,WATCH,Aviation,Stay informed. Monitor convective activity and low-visibility conditions.,false_alarm,2026-09-25T18:13:02Z
+East Coast Central,heavy_rainfall,rainfall,2026-09-19,24,,62.5,47.7,WATCH,Aviation,Stay informed. Monitor convective activity and low-visibility conditions.,false_alarm,2026-09-25T18:13:02Z
+North-West Semi-arid,heavy_rainfall,rainfall,2026-09-19,24,,62.5,65.0,WATCH,Aviation,Stay informed. Monitor convective activity and low-visibility conditions.,false_alarm,2026-09-25T18:13:02Z
+North-East Bay,heavy_rainfall,rainfall,2026-09-19,24,,62.5,39.1,WATCH,Aviation,Stay informed. Monitor convective activity and low-visibility conditions.,false_alarm,2026-09-25T18:13:02Z
+North-West Arid,heavy_rainfall,rainfall,2026-09-19,24,,62.5,54.9,WATCH,Aviation,Stay informed. Monitor convective activity and low-visibility conditions.,false_alarm,2026-09-25T18:13:02Z
+Northern Plains,heavy_rainfall,rainfall,2026-09-19,24,,62.5,56.1,WATCH,Aviation,Stay informed. Monitor convective activity and low-visibility conditions.,false_alarm,2026-09-25T18:13:02Z
+Upper Gangetic Plains,heavy_rainfall,rainfall,2026-09-19,24,,62.5,35.8,WATCH,Aviation,Stay informed. Monitor convective activity and low-visibility conditions.,false_alarm,2026-09-25T18:13:02Z
+North-East Hills,heavy_rainfall,rainfall,2026-09-19,24,,62.5,43.9,WATCH,Aviation,Stay informed. Monitor convective activity and low-visibility conditions.,false_alarm,2026-09-25T18:13:02Z
+South-West Coast,heavy_rainfall,rainfall,2026-09-19,24,,62.5,51.0,WATCH,Aviation,Stay informed. Monitor convective activity and low-visibility conditions.,false_alarm,2026-09-25T18:13:29Z
+South Peninsular West,heavy_rainfall,rainfall,2026-09-19,24,,62.5,44.4,WATCH,Aviation,Stay informed. Monitor convective activity and low-visibility conditions.,false_alarm,2026-09-25T18:13:29Z
+South Peninsular East,heavy_rainfall,rainfall,2026-09-19,24,,62.5,59.8,WATCH,Aviation,Stay informed. Monitor convective activity and low-visibility conditions.,false_alarm,2026-09-25T18:13:29Z
+South-East Coast,heavy_rainfall,rainfall,2026-09-19,24,,62.5,56.3,WATCH,Aviation,Stay informed. Monitor convective activity and low-visibility conditions.,false_alarm,2026-09-25T18:13:29Z
+Central West Deccan,heavy_rainfall,rainfall,2026-09-19,24,,62.5,40.2,WATCH,Aviation,Stay informed. Monitor convective activity and low-visibility conditions.,false_alarm,2026-09-25T18:13:29Z
+East Coast Central,heavy_rainfall,rainfall,2026-09-19,24,,62.5,47.7,WATCH,Aviation,Stay informed. Monitor convective activity and low-visibility conditions.,false_alarm,2026-09-25T18:13:29Z
+North-West Semi-arid,heavy_rainfall,rainfall,2026-09-19,24,,62.5,65.0,WATCH,Aviation,Stay informed. Monitor convective activity and low-visibility conditions.,false_alarm,2026-09-25T18:13:29Z
+North-East Bay,heavy_rainfall,rainfall,2026-09-19,24,,62.5,39.1,WATCH,Aviation,Stay informed. Monitor convective activity and low-visibility conditions.,false_alarm,2026-09-25T18:13:29Z
+North-West Arid,heavy_rainfall,rainfall,2026-09-19,24,,62.5,54.9,WATCH,Aviation,Stay informed. Monitor convective activity and low-visibility conditions.,false_alarm,2026-09-25T18:13:29Z
+Northern Plains,heavy_rainfall,rainfall,2026-09-19,24,,62.5,56.1,WATCH,Aviation,Stay informed. Monitor convective activity and low-visibility conditions.,false_alarm,2026-09-25T18:13:29Z
+Upper Gangetic Plains,heavy_rainfall,rainfall,2026-09-19,24,,62.5,35.8,WATCH,Aviation,Stay informed. Monitor convective activity and low-visibility conditions.,false_alarm,2026-09-25T18:13:29Z
+North-East Hills,heavy_rainfall,rainfall,2026-09-19,24,,62.5,43.9,WATCH,Aviation,Stay informed. Monitor convective activity and low-visibility conditions.,false_alarm,2026-09-25T18:13:29Z
+South-West Coast,heat_wave,temperature,2026-09-19,24,,40.0,66.2,WATCH,Aviation,Stay informed. Monitor density altitude effects and runway surface temperatures.,false_alarm,2026-09-25T18:14:11Z
+South Peninsular West,heat_wave,temperature,2026-09-19,24,,40.0,64.2,WATCH,Aviation,Stay informed. Monitor density altitude effects and runway surface temperatures.,false_alarm,2026-09-25T18:14:11Z
+South Peninsular East,heat_wave,temperature,2026-09-19,24,,40.0,65.4,WATCH,Aviation,Stay informed. Monitor density altitude effects and runway surface temperatures.,false_alarm,2026-09-25T18:14:11Z
+South-East Coast,heat_wave,temperature,2026-09-19,24,,40.0,66.1,WATCH,Aviation,Stay informed. Monitor density altitude effects and runway surface temperatures.,false_alarm,2026-09-25T18:14:11Z
+Central West Deccan,heat_wave,temperature,2026-09-19,24,,40.0,64.8,WATCH,Aviation,Stay informed. Monitor density altitude effects and runway surface temperatures.,false_alarm,2026-09-25T18:14:11Z
+East Coast Central,heat_wave,temperature,2026-09-19,24,,40.0,61.6,WATCH,Aviation,Stay informed. Monitor density altitude effects and runway surface temperatures.,false_alarm,2026-09-25T18:14:11Z
+North-West Semi-arid,heat_wave,temperature,2026-09-19,24,,40.0,53.6,WATCH,Aviation,Stay informed. Monitor density altitude effects and runway surface temperatures.,false_alarm,2026-09-25T18:14:11Z
+North-East Bay,heat_wave,temperature,2026-09-19,24,,40.0,42.3,WATCH,Aviation,Stay informed. Monitor density altitude effects and runway surface temperatures.,false_alarm,2026-09-25T18:14:11Z
+North-West Arid,heat_wave,temperature,2026-09-19,24,,40.0,44.1,WATCH,Aviation,Stay informed. Monitor density altitude effects and runway surface temperatures.,false_alarm,2026-09-25T18:14:11Z
+Northern Plains,heat_wave,temperature,2026-09-19,24,,40.0,31.3,WATCH,Aviation,Stay informed. Monitor density altitude effects and runway surface temperatures.,false_alarm,2026-09-25T18:14:11Z
+Upper Gangetic Plains,heat_wave,temperature,2026-09-19,24,,40.0,19.2,WATCH,Aviation,Stay informed. Monitor density altitude effects and runway surface temperatures.,false_alarm,2026-09-25T18:14:11Z
+North-East Hills,heat_wave,temperature,2026-09-19,24,,40.0,31.0,WATCH,Aviation,Stay informed. Monitor density altitude effects and runway surface temperatures.,false_alarm,2026-09-25T18:14:11Z
+South-West Coast,heat_wave,temperature,2026-09-19,72,,40.0,64.6,WATCH,Aviation,Stay informed. Monitor density altitude effects and runway surface temperatures.,false_alarm,2026-09-25T18:14:15Z
+South Peninsular West,heat_wave,temperature,2026-09-19,72,,40.0,62.7,WATCH,Aviation,Stay informed. Monitor density altitude effects and runway surface temperatures.,false_alarm,2026-09-25T18:14:15Z
+South Peninsular East,heat_wave,temperature,2026-09-19,72,,40.0,63.4,WATCH,Aviation,Stay informed. Monitor density altitude effects and runway surface temperatures.,false_alarm,2026-09-25T18:14:15Z
+South-East Coast,heat_wave,temperature,2026-09-19,72,,40.0,64.7,WATCH,Aviation,Stay informed. Monitor density altitude effects and runway surface temperatures.,false_alarm,2026-09-25T18:14:15Z
+Central West Deccan,heat_wave,temperature,2026-09-19,72,,40.0,63.3,WATCH,Aviation,Stay informed. Monitor density altitude effects and runway surface temperatures.,false_alarm,2026-09-25T18:14:15Z
+East Coast Central,heat_wave,temperature,2026-09-19,72,,40.0,60.1,WATCH,Aviation,Stay informed. Monitor density altitude effects and runway surface temperatures.,false_alarm,2026-09-25T18:14:15Z
+North-West Semi-arid,heat_wave,temperature,2026-09-19,72,,40.0,53.1,WATCH,Aviation,Stay informed. Monitor density altitude effects and runway surface temperatures.,false_alarm,2026-09-25T18:14:15Z
+North-East Bay,heat_wave,temperature,2026-09-19,72,,40.0,41.4,WATCH,Aviation,Stay informed. Monitor density altitude effects and runway surface temperatures.,false_alarm,2026-09-25T18:14:15Z
+North-West Arid,heat_wave,temperature,2026-09-19,72,,40.0,42.1,WATCH,Aviation,Stay informed. Monitor density altitude effects and runway surface temperatures.,false_alarm,2026-09-25T18:14:15Z
+Northern Plains,heat_wave,temperature,2026-09-19,72,,40.0,30.5,WATCH,Aviation,Stay informed. Monitor density altitude effects and runway surface temperatures.,false_alarm,2026-09-25T18:14:15Z
+Upper Gangetic Plains,heat_wave,temperature,2026-09-19,72,,40.0,19.0,WATCH,Aviation,Stay informed. Monitor density altitude effects and runway surface temperatures.,false_alarm,2026-09-25T18:14:15Z
+North-East Hills,heat_wave,temperature,2026-09-19,72,,40.0,25.0,WATCH,Aviation,Stay informed. Monitor density altitude effects and runway surface temperatures.,false_alarm,2026-09-25T18:14:15Z
+South-West Coast,heat_wave,temperature,2026-09-19,72,,40.0,64.6,WATCH,Energy,Stay informed. Monitor peak electricity demand and grid stress.,false_alarm,2026-09-25T18:23:25Z
+South Peninsular West,heat_wave,temperature,2026-09-19,72,,40.0,62.7,WATCH,Energy,Stay informed. Monitor peak electricity demand and grid stress.,false_alarm,2026-09-25T18:23:25Z
+South Peninsular East,heat_wave,temperature,2026-09-19,72,,40.0,63.4,WATCH,Energy,Stay informed. Monitor peak electricity demand and grid stress.,false_alarm,2026-09-25T18:23:25Z
+South-East Coast,heat_wave,temperature,2026-09-19,72,,40.0,64.7,WATCH,Energy,Stay informed. Monitor peak electricity demand and grid stress.,false_alarm,2026-09-25T18:23:25Z
+Central West Deccan,heat_wave,temperature,2026-09-19,72,,40.0,63.3,WATCH,Energy,Stay informed. Monitor peak electricity demand and grid stress.,false_alarm,2026-09-25T18:23:25Z
+East Coast Central,heat_wave,temperature,2026-09-19,72,,40.0,60.1,WATCH,Energy,Stay informed. Monitor peak electricity demand and grid stress.,false_alarm,2026-09-25T18:23:25Z
+North-West Semi-arid,heat_wave,temperature,2026-09-19,72,,40.0,53.1,WATCH,Energy,Stay informed. Monitor peak electricity demand and grid stress.,false_alarm,2026-09-25T18:23:25Z
+North-East Bay,heat_wave,temperature,2026-09-19,72,,40.0,41.4,WATCH,Energy,Stay informed. Monitor peak electricity demand and grid stress.,false_alarm,2026-09-25T18:23:25Z
+North-West Arid,heat_wave,temperature,2026-09-19,72,,40.0,42.1,WATCH,Energy,Stay informed. Monitor peak electricity demand and grid stress.,false_alarm,2026-09-25T18:23:25Z
+Northern Plains,heat_wave,temperature,2026-09-19,72,,40.0,30.5,WATCH,Energy,Stay informed. Monitor peak electricity demand and grid stress.,false_alarm,2026-09-25T18:23:25Z
+Upper Gangetic Plains,heat_wave,temperature,2026-09-19,72,,40.0,19.0,WATCH,Energy,Stay informed. Monitor peak electricity demand and grid stress.,false_alarm,2026-09-25T18:23:25Z
+North-East Hills,heat_wave,temperature,2026-09-19,72,,40.0,25.0,WATCH,Energy,Stay informed. Monitor peak electricity demand and grid stress.,false_alarm,2026-09-25T18:23:25Z
+South-West Coast,heat_wave,temperature,2026-09-19,72,,40.0,64.6,WATCH,Aviation,Stay informed. Monitor density altitude effects and runway surface temperatures.,false_alarm,2026-09-25T18:24:33Z
+South Peninsular West,heat_wave,temperature,2026-09-19,72,,40.0,62.7,WATCH,Aviation,Stay informed. Monitor density altitude effects and runway surface temperatures.,false_alarm,2026-09-25T18:24:33Z
+South Peninsular East,heat_wave,temperature,2026-09-19,72,,40.0,63.4,WATCH,Aviation,Stay informed. Monitor density altitude effects and runway surface temperatures.,false_alarm,2026-09-25T18:24:33Z
+South-East Coast,heat_wave,temperature,2026-09-19,72,,40.0,64.7,WATCH,Aviation,Stay informed. Monitor density altitude effects and runway surface temperatures.,false_alarm,2026-09-25T18:24:33Z
+Central West Deccan,heat_wave,temperature,2026-09-19,72,,40.0,63.3,WATCH,Aviation,Stay informed. Monitor density altitude effects and runway surface temperatures.,false_alarm,2026-09-25T18:24:33Z
+East Coast Central,heat_wave,temperature,2026-09-19,72,,40.0,60.1,WATCH,Aviation,Stay informed. Monitor density altitude effects and runway surface temperatures.,false_alarm,2026-09-25T18:24:33Z
+North-West Semi-arid,heat_wave,temperature,2026-09-19,72,,40.0,53.1,WATCH,Aviation,Stay informed. Monitor density altitude effects and runway surface temperatures.,false_alarm,2026-09-25T18:24:33Z
+North-East Bay,heat_wave,temperature,2026-09-19,72,,40.0,41.4,WATCH,Aviation,Stay informed. Monitor density altitude effects and runway surface temperatures.,false_alarm,2026-09-25T18:24:33Z
+North-West Arid,heat_wave,temperature,2026-09-19,72,,40.0,42.1,WATCH,Aviation,Stay informed. Monitor density altitude effects and runway surface temperatures.,false_alarm,2026-09-25T18:24:33Z
+Northern Plains,heat_wave,temperature,2026-09-19,72,,40.0,30.5,WATCH,Aviation,Stay informed. Monitor density altitude effects and runway surface temperatures.,false_alarm,2026-09-25T18:24:33Z
+Upper Gangetic Plains,heat_wave,temperature,2026-09-19,72,,40.0,19.0,WATCH,Aviation,Stay informed. Monitor density altitude effects and runway surface temperatures.,false_alarm,2026-09-25T18:24:33Z
+North-East Hills,heat_wave,temperature,2026-09-19,72,,40.0,25.0,WATCH,Aviation,Stay informed. Monitor density altitude effects and runway surface temperatures.,false_alarm,2026-09-25T18:24:33Z
+South-West Coast,heavy_rainfall,rainfall,2026-09-19,24,,50.0,51.0,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:11:00Z
+South Peninsular West,heavy_rainfall,rainfall,2026-09-19,24,,50.0,44.4,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:11:00Z
+South Peninsular East,heavy_rainfall,rainfall,2026-09-19,24,,50.0,59.8,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:11:00Z
+South-East Coast,heavy_rainfall,rainfall,2026-09-19,24,,50.0,56.3,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:11:00Z
+Central West Deccan,heavy_rainfall,rainfall,2026-09-19,24,,50.0,40.2,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:11:00Z
+East Coast Central,heavy_rainfall,rainfall,2026-09-19,24,,50.0,47.7,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:11:00Z
+North-West Semi-arid,heavy_rainfall,rainfall,2026-09-19,24,,50.0,65.0,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:11:00Z
+North-East Bay,heavy_rainfall,rainfall,2026-09-19,24,,50.0,39.1,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:11:00Z
+North-West Arid,heavy_rainfall,rainfall,2026-09-19,24,,50.0,54.9,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:11:00Z
+Northern Plains,heavy_rainfall,rainfall,2026-09-19,24,,50.0,56.1,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:11:00Z
+Upper Gangetic Plains,heavy_rainfall,rainfall,2026-09-19,24,,50.0,35.8,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:11:00Z
+North-East Hills,heavy_rainfall,rainfall,2026-09-19,24,,50.0,43.9,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:11:00Z
+South-West Coast,heavy_rainfall,rainfall,2026-09-19,24,,50.0,51.0,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:11:23Z
+South Peninsular West,heavy_rainfall,rainfall,2026-09-19,24,,50.0,44.4,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:11:23Z
+South Peninsular East,heavy_rainfall,rainfall,2026-09-19,24,,50.0,59.8,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:11:23Z
+South-East Coast,heavy_rainfall,rainfall,2026-09-19,24,,50.0,56.3,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:11:23Z
+Central West Deccan,heavy_rainfall,rainfall,2026-09-19,24,,50.0,40.2,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:11:23Z
+East Coast Central,heavy_rainfall,rainfall,2026-09-19,24,,50.0,47.7,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:11:23Z
+North-West Semi-arid,heavy_rainfall,rainfall,2026-09-19,24,,50.0,65.0,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:11:23Z
+North-East Bay,heavy_rainfall,rainfall,2026-09-19,24,,50.0,39.1,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:11:23Z
+North-West Arid,heavy_rainfall,rainfall,2026-09-19,24,,50.0,54.9,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:11:23Z
+Northern Plains,heavy_rainfall,rainfall,2026-09-19,24,,50.0,56.1,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:11:23Z
+Upper Gangetic Plains,heavy_rainfall,rainfall,2026-09-19,24,,50.0,35.8,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:11:23Z
+North-East Hills,heavy_rainfall,rainfall,2026-09-19,24,,50.0,43.9,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:11:23Z
+South-West Coast,heavy_rainfall,rainfall,2026-09-19,24,,50.0,51.0,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:11:26Z
+South Peninsular West,heavy_rainfall,rainfall,2026-09-19,24,,50.0,44.4,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:11:26Z
+South Peninsular East,heavy_rainfall,rainfall,2026-09-19,24,,50.0,59.8,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:11:26Z
+South-East Coast,heavy_rainfall,rainfall,2026-09-19,24,,50.0,56.3,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:11:26Z
+Central West Deccan,heavy_rainfall,rainfall,2026-09-19,24,,50.0,40.2,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:11:26Z
+East Coast Central,heavy_rainfall,rainfall,2026-09-19,24,,50.0,47.7,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:11:26Z
+North-West Semi-arid,heavy_rainfall,rainfall,2026-09-19,24,,50.0,65.0,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:11:26Z
+North-East Bay,heavy_rainfall,rainfall,2026-09-19,24,,50.0,39.1,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:11:26Z
+North-West Arid,heavy_rainfall,rainfall,2026-09-19,24,,50.0,54.9,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:11:26Z
+Northern Plains,heavy_rainfall,rainfall,2026-09-19,24,,50.0,56.1,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:11:26Z
+Upper Gangetic Plains,heavy_rainfall,rainfall,2026-09-19,24,,50.0,35.8,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:11:26Z
+North-East Hills,heavy_rainfall,rainfall,2026-09-19,24,,50.0,43.9,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:11:26Z
+South-West Coast,heavy_rainfall,rainfall,2026-09-19,168,,50.0,48.1,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:12:04Z
+South Peninsular West,heavy_rainfall,rainfall,2026-09-19,168,,50.0,34.1,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:12:04Z
+South Peninsular East,heavy_rainfall,rainfall,2026-09-19,168,,50.0,39.3,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:12:04Z
+South-East Coast,heavy_rainfall,rainfall,2026-09-19,168,,50.0,44.2,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:12:04Z
+Central West Deccan,heavy_rainfall,rainfall,2026-09-19,168,,50.0,37.8,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:12:04Z
+East Coast Central,heavy_rainfall,rainfall,2026-09-19,168,,50.0,33.8,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:12:04Z
+North-West Semi-arid,heavy_rainfall,rainfall,2026-09-19,168,,50.0,56.6,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:12:04Z
+North-East Bay,heavy_rainfall,rainfall,2026-09-19,168,,50.0,26.3,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:12:04Z
+North-West Arid,heavy_rainfall,rainfall,2026-09-19,168,,50.0,47.4,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:12:04Z
+Northern Plains,heavy_rainfall,rainfall,2026-09-19,168,,50.0,50.8,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:12:04Z
+Upper Gangetic Plains,heavy_rainfall,rainfall,2026-09-19,168,,50.0,28.4,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:12:04Z
+North-East Hills,heavy_rainfall,rainfall,2026-09-19,168,,50.0,43.2,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:12:04Z
+South-West Coast,heat_wave,temperature,2026-09-19,168,,40.0,63.7,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-25T19:13:15Z
+South Peninsular West,heat_wave,temperature,2026-09-19,168,,40.0,63.3,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-25T19:13:15Z
+South Peninsular East,heat_wave,temperature,2026-09-19,168,,40.0,62.9,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-25T19:13:15Z
+South-East Coast,heat_wave,temperature,2026-09-19,168,,40.0,63.9,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-25T19:13:15Z
+Central West Deccan,heat_wave,temperature,2026-09-19,168,,40.0,60.0,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-25T19:13:15Z
+East Coast Central,heat_wave,temperature,2026-09-19,168,,40.0,60.0,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-25T19:13:15Z
+North-West Semi-arid,heat_wave,temperature,2026-09-19,168,,40.0,47.9,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-25T19:13:15Z
+North-East Bay,heat_wave,temperature,2026-09-19,168,,40.0,44.1,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-25T19:13:15Z
+North-West Arid,heat_wave,temperature,2026-09-19,168,,40.0,38.5,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-25T19:13:15Z
+Northern Plains,heat_wave,temperature,2026-09-19,168,,40.0,29.0,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-25T19:13:15Z
+Upper Gangetic Plains,heat_wave,temperature,2026-09-19,168,,40.0,19.8,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-25T19:13:15Z
+North-East Hills,heat_wave,temperature,2026-09-19,168,,40.0,26.4,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-25T19:13:15Z
+South-West Coast,heat_wave,temperature,2026-09-19,168,,40.0,63.7,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-25T19:14:24Z
+South Peninsular West,heat_wave,temperature,2026-09-19,168,,40.0,63.3,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-25T19:14:24Z
+South Peninsular East,heat_wave,temperature,2026-09-19,168,,40.0,62.9,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-25T19:14:24Z
+South-East Coast,heat_wave,temperature,2026-09-19,168,,40.0,63.9,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-25T19:14:24Z
+Central West Deccan,heat_wave,temperature,2026-09-19,168,,40.0,60.0,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-25T19:14:24Z
+East Coast Central,heat_wave,temperature,2026-09-19,168,,40.0,60.0,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-25T19:14:24Z
+North-West Semi-arid,heat_wave,temperature,2026-09-19,168,,40.0,47.9,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-25T19:14:24Z
+North-East Bay,heat_wave,temperature,2026-09-19,168,,40.0,44.1,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-25T19:14:24Z
+North-West Arid,heat_wave,temperature,2026-09-19,168,,40.0,38.5,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-25T19:14:24Z
+Northern Plains,heat_wave,temperature,2026-09-19,168,,40.0,29.0,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-25T19:14:24Z
+Upper Gangetic Plains,heat_wave,temperature,2026-09-19,168,,40.0,19.8,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-25T19:14:24Z
+North-East Hills,heat_wave,temperature,2026-09-19,168,,40.0,26.4,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-25T19:14:24Z
+South-West Coast,heat_wave,temperature,2026-09-19,168,,40.0,63.7,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-25T19:14:29Z
+South Peninsular West,heat_wave,temperature,2026-09-19,168,,40.0,63.3,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-25T19:14:29Z
+South Peninsular East,heat_wave,temperature,2026-09-19,168,,40.0,62.9,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-25T19:14:29Z
+South-East Coast,heat_wave,temperature,2026-09-19,168,,40.0,63.9,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-25T19:14:29Z
+Central West Deccan,heat_wave,temperature,2026-09-19,168,,40.0,60.0,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-25T19:14:29Z
+East Coast Central,heat_wave,temperature,2026-09-19,168,,40.0,60.0,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-25T19:14:29Z
+North-West Semi-arid,heat_wave,temperature,2026-09-19,168,,40.0,47.9,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-25T19:14:29Z
+North-East Bay,heat_wave,temperature,2026-09-19,168,,40.0,44.1,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-25T19:14:29Z
+North-West Arid,heat_wave,temperature,2026-09-19,168,,40.0,38.5,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-25T19:14:29Z
+Northern Plains,heat_wave,temperature,2026-09-19,168,,40.0,29.0,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-25T19:14:29Z
+Upper Gangetic Plains,heat_wave,temperature,2026-09-19,168,,40.0,19.8,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-25T19:14:29Z
+North-East Hills,heat_wave,temperature,2026-09-19,168,,40.0,26.4,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-25T19:14:29Z
+South-West Coast,heat_wave,temperature,2026-09-19,168,,40.0,63.7,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-25T19:18:33Z
+South Peninsular West,heat_wave,temperature,2026-09-19,168,,40.0,63.3,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-25T19:18:33Z
+South Peninsular East,heat_wave,temperature,2026-09-19,168,,40.0,62.9,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-25T19:18:33Z
+South-East Coast,heat_wave,temperature,2026-09-19,168,,40.0,63.9,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-25T19:18:33Z
+Central West Deccan,heat_wave,temperature,2026-09-19,168,,40.0,60.0,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-25T19:18:33Z
+East Coast Central,heat_wave,temperature,2026-09-19,168,,40.0,60.0,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-25T19:18:33Z
+North-West Semi-arid,heat_wave,temperature,2026-09-19,168,,40.0,47.9,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-25T19:18:33Z
+North-East Bay,heat_wave,temperature,2026-09-19,168,,40.0,44.1,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-25T19:18:33Z
+North-West Arid,heat_wave,temperature,2026-09-19,168,,40.0,38.5,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-25T19:18:33Z
+Northern Plains,heat_wave,temperature,2026-09-19,168,,40.0,29.0,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-25T19:18:33Z
+Upper Gangetic Plains,heat_wave,temperature,2026-09-19,168,,40.0,19.8,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-25T19:18:33Z
+North-East Hills,heat_wave,temperature,2026-09-19,168,,40.0,26.4,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-25T19:18:33Z
+South-West Coast,heavy_rainfall,rainfall,2026-09-19,24,,50.0,51.0,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:39:32Z
+South Peninsular West,heavy_rainfall,rainfall,2026-09-19,24,,50.0,44.4,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:39:32Z
+South Peninsular East,heavy_rainfall,rainfall,2026-09-19,24,,50.0,59.8,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:39:32Z
+South-East Coast,heavy_rainfall,rainfall,2026-09-19,24,,50.0,56.3,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:39:32Z
+Central West Deccan,heavy_rainfall,rainfall,2026-09-19,24,,50.0,40.2,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:39:32Z
+East Coast Central,heavy_rainfall,rainfall,2026-09-19,24,,50.0,47.7,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:39:32Z
+North-West Semi-arid,heavy_rainfall,rainfall,2026-09-19,24,,50.0,65.0,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:39:32Z
+North-East Bay,heavy_rainfall,rainfall,2026-09-19,24,,50.0,39.1,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:39:32Z
+North-West Arid,heavy_rainfall,rainfall,2026-09-19,24,,50.0,54.9,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:39:32Z
+Northern Plains,heavy_rainfall,rainfall,2026-09-19,24,,50.0,56.1,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:39:32Z
+Upper Gangetic Plains,heavy_rainfall,rainfall,2026-09-19,24,,50.0,35.8,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:39:32Z
+North-East Hills,heavy_rainfall,rainfall,2026-09-19,24,,50.0,43.9,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:39:32Z
+South-West Coast,heavy_rainfall,rainfall,2026-09-19,24,,50.0,51.0,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:45:40Z
+South Peninsular West,heavy_rainfall,rainfall,2026-09-19,24,,50.0,44.4,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:45:40Z
+South Peninsular East,heavy_rainfall,rainfall,2026-09-19,24,,50.0,59.8,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:45:40Z
+South-East Coast,heavy_rainfall,rainfall,2026-09-19,24,,50.0,56.3,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:45:40Z
+Central West Deccan,heavy_rainfall,rainfall,2026-09-19,24,,50.0,40.2,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:45:40Z
+East Coast Central,heavy_rainfall,rainfall,2026-09-19,24,,50.0,47.7,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:45:40Z
+North-West Semi-arid,heavy_rainfall,rainfall,2026-09-19,24,,50.0,65.0,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:45:40Z
+North-East Bay,heavy_rainfall,rainfall,2026-09-19,24,,50.0,39.1,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:45:40Z
+North-West Arid,heavy_rainfall,rainfall,2026-09-19,24,,50.0,54.9,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:45:40Z
+Northern Plains,heavy_rainfall,rainfall,2026-09-19,24,,50.0,56.1,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:45:40Z
+Upper Gangetic Plains,heavy_rainfall,rainfall,2026-09-19,24,,50.0,35.8,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:45:40Z
+North-East Hills,heavy_rainfall,rainfall,2026-09-19,24,,50.0,43.9,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:45:40Z
+South-West Coast,heavy_rainfall,rainfall,2026-09-19,24,,50.0,51.0,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:50:44Z
+South Peninsular West,heavy_rainfall,rainfall,2026-09-19,24,,50.0,44.4,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:50:44Z
+South Peninsular East,heavy_rainfall,rainfall,2026-09-19,24,,50.0,59.8,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:50:44Z
+South-East Coast,heavy_rainfall,rainfall,2026-09-19,24,,50.0,56.3,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:50:44Z
+Central West Deccan,heavy_rainfall,rainfall,2026-09-19,24,,50.0,40.2,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:50:44Z
+East Coast Central,heavy_rainfall,rainfall,2026-09-19,24,,50.0,47.7,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:50:44Z
+North-West Semi-arid,heavy_rainfall,rainfall,2026-09-19,24,,50.0,65.0,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:50:44Z
+North-East Bay,heavy_rainfall,rainfall,2026-09-19,24,,50.0,39.1,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:50:44Z
+North-West Arid,heavy_rainfall,rainfall,2026-09-19,24,,50.0,54.9,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:50:44Z
+Northern Plains,heavy_rainfall,rainfall,2026-09-19,24,,50.0,56.1,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:50:44Z
+Upper Gangetic Plains,heavy_rainfall,rainfall,2026-09-19,24,,50.0,35.8,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:50:44Z
+North-East Hills,heavy_rainfall,rainfall,2026-09-19,24,,50.0,43.9,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:50:44Z
+South-West Coast,heavy_rainfall,rainfall,2026-09-19,24,,50.0,51.0,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:53:52Z
+South Peninsular West,heavy_rainfall,rainfall,2026-09-19,24,,50.0,44.4,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:53:52Z
+South Peninsular East,heavy_rainfall,rainfall,2026-09-19,24,,50.0,59.8,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:53:52Z
+South-East Coast,heavy_rainfall,rainfall,2026-09-19,24,,50.0,56.3,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:53:52Z
+Central West Deccan,heavy_rainfall,rainfall,2026-09-19,24,,50.0,40.2,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:53:52Z
+East Coast Central,heavy_rainfall,rainfall,2026-09-19,24,,50.0,47.7,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:53:52Z
+North-West Semi-arid,heavy_rainfall,rainfall,2026-09-19,24,,50.0,65.0,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:53:52Z
+North-East Bay,heavy_rainfall,rainfall,2026-09-19,24,,50.0,39.1,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:53:52Z
+North-West Arid,heavy_rainfall,rainfall,2026-09-19,24,,50.0,54.9,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:53:52Z
+Northern Plains,heavy_rainfall,rainfall,2026-09-19,24,,50.0,56.1,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:53:52Z
+Upper Gangetic Plains,heavy_rainfall,rainfall,2026-09-19,24,,50.0,35.8,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:53:52Z
+North-East Hills,heavy_rainfall,rainfall,2026-09-19,24,,50.0,43.9,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T19:53:52Z
+South-West Coast,heavy_rainfall,rainfall,2026-09-19,24,,50.0,51.0,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:15:18Z
+South Peninsular West,heavy_rainfall,rainfall,2026-09-19,24,,50.0,44.4,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:15:18Z
+South Peninsular East,heavy_rainfall,rainfall,2026-09-19,24,,50.0,59.8,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:15:18Z
+South-East Coast,heavy_rainfall,rainfall,2026-09-19,24,,50.0,56.3,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:15:18Z
+Central West Deccan,heavy_rainfall,rainfall,2026-09-19,24,,50.0,40.2,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:15:18Z
+East Coast Central,heavy_rainfall,rainfall,2026-09-19,24,,50.0,47.7,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:15:18Z
+North-West Semi-arid,heavy_rainfall,rainfall,2026-09-19,24,,50.0,65.0,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:15:18Z
+North-East Bay,heavy_rainfall,rainfall,2026-09-19,24,,50.0,39.1,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:15:18Z
+North-West Arid,heavy_rainfall,rainfall,2026-09-19,24,,50.0,54.9,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:15:18Z
+Northern Plains,heavy_rainfall,rainfall,2026-09-19,24,,50.0,56.1,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:15:18Z
+Upper Gangetic Plains,heavy_rainfall,rainfall,2026-09-19,24,,50.0,35.8,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:15:18Z
+North-East Hills,heavy_rainfall,rainfall,2026-09-19,24,,50.0,43.9,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:15:18Z
+South-West Coast,heavy_rainfall,rainfall,2026-09-19,24,,50.0,51.0,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:26:08Z
+South Peninsular West,heavy_rainfall,rainfall,2026-09-19,24,,50.0,44.4,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:26:08Z
+South Peninsular East,heavy_rainfall,rainfall,2026-09-19,24,,50.0,59.8,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:26:08Z
+South-East Coast,heavy_rainfall,rainfall,2026-09-19,24,,50.0,56.3,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:26:08Z
+Central West Deccan,heavy_rainfall,rainfall,2026-09-19,24,,50.0,40.2,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:26:08Z
+East Coast Central,heavy_rainfall,rainfall,2026-09-19,24,,50.0,47.7,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:26:08Z
+North-West Semi-arid,heavy_rainfall,rainfall,2026-09-19,24,,50.0,65.0,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:26:08Z
+North-East Bay,heavy_rainfall,rainfall,2026-09-19,24,,50.0,39.1,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:26:08Z
+North-West Arid,heavy_rainfall,rainfall,2026-09-19,24,,50.0,54.9,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:26:08Z
+Northern Plains,heavy_rainfall,rainfall,2026-09-19,24,,50.0,56.1,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:26:08Z
+Upper Gangetic Plains,heavy_rainfall,rainfall,2026-09-19,24,,50.0,35.8,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:26:08Z
+North-East Hills,heavy_rainfall,rainfall,2026-09-19,24,,50.0,43.9,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:26:08Z
+South-West Coast,heavy_rainfall,rainfall,2026-09-19,24,,50.0,51.0,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:31:11Z
+South Peninsular West,heavy_rainfall,rainfall,2026-09-19,24,,50.0,44.4,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:31:11Z
+South Peninsular East,heavy_rainfall,rainfall,2026-09-19,24,,50.0,59.8,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:31:11Z
+South-East Coast,heavy_rainfall,rainfall,2026-09-19,24,,50.0,56.3,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:31:11Z
+Central West Deccan,heavy_rainfall,rainfall,2026-09-19,24,,50.0,40.2,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:31:11Z
+East Coast Central,heavy_rainfall,rainfall,2026-09-19,24,,50.0,47.7,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:31:11Z
+North-West Semi-arid,heavy_rainfall,rainfall,2026-09-19,24,,50.0,65.0,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:31:11Z
+North-East Bay,heavy_rainfall,rainfall,2026-09-19,24,,50.0,39.1,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:31:11Z
+North-West Arid,heavy_rainfall,rainfall,2026-09-19,24,,50.0,54.9,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:31:11Z
+Northern Plains,heavy_rainfall,rainfall,2026-09-19,24,,50.0,56.1,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:31:11Z
+Upper Gangetic Plains,heavy_rainfall,rainfall,2026-09-19,24,,50.0,35.8,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:31:11Z
+North-East Hills,heavy_rainfall,rainfall,2026-09-19,24,,50.0,43.9,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:31:11Z
+South-West Coast,heavy_rainfall,rainfall,2026-09-19,24,,50.0,51.0,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:37:39Z
+South Peninsular West,heavy_rainfall,rainfall,2026-09-19,24,,50.0,44.4,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:37:39Z
+South Peninsular East,heavy_rainfall,rainfall,2026-09-19,24,,50.0,59.8,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:37:39Z
+South-East Coast,heavy_rainfall,rainfall,2026-09-19,24,,50.0,56.3,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:37:39Z
+Central West Deccan,heavy_rainfall,rainfall,2026-09-19,24,,50.0,40.2,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:37:39Z
+East Coast Central,heavy_rainfall,rainfall,2026-09-19,24,,50.0,47.7,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:37:39Z
+North-West Semi-arid,heavy_rainfall,rainfall,2026-09-19,24,,50.0,65.0,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:37:39Z
+North-East Bay,heavy_rainfall,rainfall,2026-09-19,24,,50.0,39.1,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:37:39Z
+North-West Arid,heavy_rainfall,rainfall,2026-09-19,24,,50.0,54.9,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:37:39Z
+Northern Plains,heavy_rainfall,rainfall,2026-09-19,24,,50.0,56.1,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:37:39Z
+Upper Gangetic Plains,heavy_rainfall,rainfall,2026-09-19,24,,50.0,35.8,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:37:39Z
+North-East Hills,heavy_rainfall,rainfall,2026-09-19,24,,50.0,43.9,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:37:39Z
+South-West Coast,heavy_rainfall,rainfall,2026-09-19,24,,50.0,51.0,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:37:46Z
+South Peninsular West,heavy_rainfall,rainfall,2026-09-19,24,,50.0,44.4,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:37:46Z
+South Peninsular East,heavy_rainfall,rainfall,2026-09-19,24,,50.0,59.8,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:37:46Z
+South-East Coast,heavy_rainfall,rainfall,2026-09-19,24,,50.0,56.3,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:37:46Z
+Central West Deccan,heavy_rainfall,rainfall,2026-09-19,24,,50.0,40.2,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:37:46Z
+East Coast Central,heavy_rainfall,rainfall,2026-09-19,24,,50.0,47.7,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:37:46Z
+North-West Semi-arid,heavy_rainfall,rainfall,2026-09-19,24,,50.0,65.0,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:37:46Z
+North-East Bay,heavy_rainfall,rainfall,2026-09-19,24,,50.0,39.1,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:37:46Z
+North-West Arid,heavy_rainfall,rainfall,2026-09-19,24,,50.0,54.9,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:37:46Z
+Northern Plains,heavy_rainfall,rainfall,2026-09-19,24,,50.0,56.1,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:37:46Z
+Upper Gangetic Plains,heavy_rainfall,rainfall,2026-09-19,24,,50.0,35.8,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:37:46Z
+North-East Hills,heavy_rainfall,rainfall,2026-09-19,24,,50.0,43.9,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:37:46Z
+South-West Coast,heavy_rainfall,rainfall,2026-09-19,24,,50.0,51.0,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:38:09Z
+South Peninsular West,heavy_rainfall,rainfall,2026-09-19,24,,50.0,44.4,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:38:09Z
+South Peninsular East,heavy_rainfall,rainfall,2026-09-19,24,,50.0,59.8,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:38:09Z
+South-East Coast,heavy_rainfall,rainfall,2026-09-19,24,,50.0,56.3,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:38:09Z
+Central West Deccan,heavy_rainfall,rainfall,2026-09-19,24,,50.0,40.2,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:38:09Z
+East Coast Central,heavy_rainfall,rainfall,2026-09-19,24,,50.0,47.7,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:38:09Z
+North-West Semi-arid,heavy_rainfall,rainfall,2026-09-19,24,,50.0,65.0,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:38:09Z
+North-East Bay,heavy_rainfall,rainfall,2026-09-19,24,,50.0,39.1,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:38:09Z
+North-West Arid,heavy_rainfall,rainfall,2026-09-19,24,,50.0,54.9,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:38:09Z
+Northern Plains,heavy_rainfall,rainfall,2026-09-19,24,,50.0,56.1,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:38:09Z
+Upper Gangetic Plains,heavy_rainfall,rainfall,2026-09-19,24,,50.0,35.8,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:38:09Z
+North-East Hills,heavy_rainfall,rainfall,2026-09-19,24,,50.0,43.9,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:38:09Z
+South-West Coast,heat_wave,temperature,2026-09-19,24,,40.0,66.2,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-25T20:38:24Z
+South Peninsular West,heat_wave,temperature,2026-09-19,24,,40.0,64.2,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-25T20:38:24Z
+South Peninsular East,heat_wave,temperature,2026-09-19,24,,40.0,65.4,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-25T20:38:24Z
+South-East Coast,heat_wave,temperature,2026-09-19,24,,40.0,66.1,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-25T20:38:24Z
+Central West Deccan,heat_wave,temperature,2026-09-19,24,,40.0,64.8,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-25T20:38:24Z
+East Coast Central,heat_wave,temperature,2026-09-19,24,,40.0,61.6,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-25T20:38:24Z
+North-West Semi-arid,heat_wave,temperature,2026-09-19,24,,40.0,53.6,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-25T20:38:24Z
+North-East Bay,heat_wave,temperature,2026-09-19,24,,40.0,42.3,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-25T20:38:24Z
+North-West Arid,heat_wave,temperature,2026-09-19,24,,40.0,44.1,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-25T20:38:24Z
+Northern Plains,heat_wave,temperature,2026-09-19,24,,40.0,31.3,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-25T20:38:24Z
+Upper Gangetic Plains,heat_wave,temperature,2026-09-19,24,,40.0,19.2,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-25T20:38:24Z
+North-East Hills,heat_wave,temperature,2026-09-19,24,,40.0,31.0,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-25T20:38:24Z
+South-West Coast,heavy_rainfall,rainfall,2026-09-19,24,,50.0,51.0,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:41:34Z
+South Peninsular West,heavy_rainfall,rainfall,2026-09-19,24,,50.0,44.4,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:41:34Z
+South Peninsular East,heavy_rainfall,rainfall,2026-09-19,24,,50.0,59.8,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:41:34Z
+South-East Coast,heavy_rainfall,rainfall,2026-09-19,24,,50.0,56.3,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:41:34Z
+Central West Deccan,heavy_rainfall,rainfall,2026-09-19,24,,50.0,40.2,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:41:34Z
+East Coast Central,heavy_rainfall,rainfall,2026-09-19,24,,50.0,47.7,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:41:34Z
+North-West Semi-arid,heavy_rainfall,rainfall,2026-09-19,24,,50.0,65.0,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:41:34Z
+North-East Bay,heavy_rainfall,rainfall,2026-09-19,24,,50.0,39.1,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:41:34Z
+North-West Arid,heavy_rainfall,rainfall,2026-09-19,24,,50.0,54.9,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:41:34Z
+Northern Plains,heavy_rainfall,rainfall,2026-09-19,24,,50.0,56.1,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:41:34Z
+Upper Gangetic Plains,heavy_rainfall,rainfall,2026-09-19,24,,50.0,35.8,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:41:34Z
+North-East Hills,heavy_rainfall,rainfall,2026-09-19,24,,50.0,43.9,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T20:41:34Z
+South-West Coast,heavy_rainfall,rainfall,2026-09-19,24,,50.0,51.0,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T21:00:34Z
+South Peninsular West,heavy_rainfall,rainfall,2026-09-19,24,,50.0,44.4,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T21:00:34Z
+South Peninsular East,heavy_rainfall,rainfall,2026-09-19,24,,50.0,59.8,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T21:00:34Z
+South-East Coast,heavy_rainfall,rainfall,2026-09-19,24,,50.0,56.3,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T21:00:34Z
+Central West Deccan,heavy_rainfall,rainfall,2026-09-19,24,,50.0,40.2,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T21:00:34Z
+East Coast Central,heavy_rainfall,rainfall,2026-09-19,24,,50.0,47.7,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T21:00:34Z
+North-West Semi-arid,heavy_rainfall,rainfall,2026-09-19,24,,50.0,65.0,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T21:00:34Z
+North-East Bay,heavy_rainfall,rainfall,2026-09-19,24,,50.0,39.1,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T21:00:34Z
+North-West Arid,heavy_rainfall,rainfall,2026-09-19,24,,50.0,54.9,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T21:00:34Z
+Northern Plains,heavy_rainfall,rainfall,2026-09-19,24,,50.0,56.1,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T21:00:34Z
+Upper Gangetic Plains,heavy_rainfall,rainfall,2026-09-19,24,,50.0,35.8,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T21:00:34Z
+North-East Hills,heavy_rainfall,rainfall,2026-09-19,24,,50.0,43.9,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-25T21:00:34Z
+South-West Coast,heavy_rainfall,rainfall,2026-09-19,24,,50.0,51.0,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-26T06:08:18Z
+South Peninsular West,heavy_rainfall,rainfall,2026-09-19,24,,50.0,44.4,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-26T06:08:18Z
+South Peninsular East,heavy_rainfall,rainfall,2026-09-19,24,,50.0,59.8,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-26T06:08:18Z
+South-East Coast,heavy_rainfall,rainfall,2026-09-19,24,,50.0,56.3,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-26T06:08:18Z
+Central West Deccan,heavy_rainfall,rainfall,2026-09-19,24,,50.0,40.2,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-26T06:08:18Z
+East Coast Central,heavy_rainfall,rainfall,2026-09-19,24,,50.0,47.7,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-26T06:08:18Z
+North-West Semi-arid,heavy_rainfall,rainfall,2026-09-19,24,,50.0,65.0,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-26T06:08:18Z
+North-East Bay,heavy_rainfall,rainfall,2026-09-19,24,,50.0,39.1,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-26T06:08:18Z
+North-West Arid,heavy_rainfall,rainfall,2026-09-19,24,,50.0,54.9,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-26T06:08:18Z
+Northern Plains,heavy_rainfall,rainfall,2026-09-19,24,,50.0,56.1,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-26T06:08:18Z
+Upper Gangetic Plains,heavy_rainfall,rainfall,2026-09-19,24,,50.0,35.8,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-26T06:08:18Z
+North-East Hills,heavy_rainfall,rainfall,2026-09-19,24,,50.0,43.9,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-26T06:08:18Z
+South-West Coast,heavy_rainfall,rainfall,2026-09-19,24,,50.0,51.0,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-26T06:11:35Z
+South Peninsular West,heavy_rainfall,rainfall,2026-09-19,24,,50.0,44.4,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-26T06:11:35Z
+South Peninsular East,heavy_rainfall,rainfall,2026-09-19,24,,50.0,59.8,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-26T06:11:35Z
+South-East Coast,heavy_rainfall,rainfall,2026-09-19,24,,50.0,56.3,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-26T06:11:35Z
+Central West Deccan,heavy_rainfall,rainfall,2026-09-19,24,,50.0,40.2,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-26T06:11:35Z
+East Coast Central,heavy_rainfall,rainfall,2026-09-19,24,,50.0,47.7,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-26T06:11:35Z
+North-West Semi-arid,heavy_rainfall,rainfall,2026-09-19,24,,50.0,65.0,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-26T06:11:35Z
+North-East Bay,heavy_rainfall,rainfall,2026-09-19,24,,50.0,39.1,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-26T06:11:35Z
+North-West Arid,heavy_rainfall,rainfall,2026-09-19,24,,50.0,54.9,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-26T06:11:35Z
+Northern Plains,heavy_rainfall,rainfall,2026-09-19,24,,50.0,56.1,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-26T06:11:35Z
+Upper Gangetic Plains,heavy_rainfall,rainfall,2026-09-19,24,,50.0,35.8,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-26T06:11:35Z
+North-East Hills,heavy_rainfall,rainfall,2026-09-19,24,,50.0,43.9,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-26T06:11:35Z
+South-West Coast,heat_wave,temperature,2026-09-19,168,,40.0,63.7,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-26T06:12:29Z
+South Peninsular West,heat_wave,temperature,2026-09-19,168,,40.0,63.3,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-26T06:12:29Z
+South Peninsular East,heat_wave,temperature,2026-09-19,168,,40.0,62.9,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-26T06:12:29Z
+South-East Coast,heat_wave,temperature,2026-09-19,168,,40.0,63.9,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-26T06:12:29Z
+Central West Deccan,heat_wave,temperature,2026-09-19,168,,40.0,60.0,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-26T06:12:29Z
+East Coast Central,heat_wave,temperature,2026-09-19,168,,40.0,60.0,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-26T06:12:29Z
+North-West Semi-arid,heat_wave,temperature,2026-09-19,168,,40.0,47.9,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-26T06:12:29Z
+North-East Bay,heat_wave,temperature,2026-09-19,168,,40.0,44.1,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-26T06:12:29Z
+North-West Arid,heat_wave,temperature,2026-09-19,168,,40.0,38.5,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-26T06:12:29Z
+Northern Plains,heat_wave,temperature,2026-09-19,168,,40.0,29.0,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-26T06:12:29Z
+Upper Gangetic Plains,heat_wave,temperature,2026-09-19,168,,40.0,19.8,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-26T06:12:29Z
+North-East Hills,heat_wave,temperature,2026-09-19,168,,40.0,26.4,WATCH,Agriculture,Stay informed. Monitor heat-stress on livestock and high-value crops.,false_alarm,2026-09-26T06:12:29Z
+South-West Coast,heavy_rainfall,rainfall,2026-09-19,24,,50.0,51.0,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-26T06:57:22Z
+South Peninsular West,heavy_rainfall,rainfall,2026-09-19,24,,50.0,44.4,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-26T06:57:22Z
+South Peninsular East,heavy_rainfall,rainfall,2026-09-19,24,,50.0,59.8,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-26T06:57:22Z
+South-East Coast,heavy_rainfall,rainfall,2026-09-19,24,,50.0,56.3,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-26T06:57:22Z
+Central West Deccan,heavy_rainfall,rainfall,2026-09-19,24,,50.0,40.2,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-26T06:57:22Z
+East Coast Central,heavy_rainfall,rainfall,2026-09-19,24,,50.0,47.7,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-26T06:57:22Z
+North-West Semi-arid,heavy_rainfall,rainfall,2026-09-19,24,,50.0,65.0,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-26T06:57:22Z
+North-East Bay,heavy_rainfall,rainfall,2026-09-19,24,,50.0,39.1,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-26T06:57:22Z
+North-West Arid,heavy_rainfall,rainfall,2026-09-19,24,,50.0,54.9,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-26T06:57:22Z
+Northern Plains,heavy_rainfall,rainfall,2026-09-19,24,,50.0,56.1,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-26T06:57:22Z
+Upper Gangetic Plains,heavy_rainfall,rainfall,2026-09-19,24,,50.0,35.8,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-26T06:57:22Z
+North-East Hills,heavy_rainfall,rainfall,2026-09-19,24,,50.0,43.9,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-26T06:57:22Z
+South-West Coast,heavy_rainfall,rainfall,2026-09-19,24,,50.0,51.0,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-26T09:27:55Z
+South Peninsular West,heavy_rainfall,rainfall,2026-09-19,24,,50.0,44.4,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-26T09:27:55Z
+South Peninsular East,heavy_rainfall,rainfall,2026-09-19,24,,50.0,59.8,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-26T09:27:55Z
+South-East Coast,heavy_rainfall,rainfall,2026-09-19,24,,50.0,56.3,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-26T09:27:55Z
+Central West Deccan,heavy_rainfall,rainfall,2026-09-19,24,,50.0,40.2,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-26T09:27:55Z
+East Coast Central,heavy_rainfall,rainfall,2026-09-19,24,,50.0,47.7,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-26T09:27:55Z
+North-West Semi-arid,heavy_rainfall,rainfall,2026-09-19,24,,50.0,65.0,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-26T09:27:55Z
+North-East Bay,heavy_rainfall,rainfall,2026-09-19,24,,50.0,39.1,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-26T09:27:55Z
+North-West Arid,heavy_rainfall,rainfall,2026-09-19,24,,50.0,54.9,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-26T09:27:55Z
+Northern Plains,heavy_rainfall,rainfall,2026-09-19,24,,50.0,56.1,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-26T09:27:55Z
+Upper Gangetic Plains,heavy_rainfall,rainfall,2026-09-19,24,,50.0,35.8,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-26T09:27:55Z
+North-East Hills,heavy_rainfall,rainfall,2026-09-19,24,,50.0,43.9,WATCH,Agriculture,"Stay informed. Monitor waterlogging, field drainage and crop damage risk.",false_alarm,2026-09-26T09:27:55Z
