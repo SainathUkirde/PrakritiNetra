@@ -164,7 +164,7 @@ def merge_skill_tables(
 
     merged = (
         combined.groupby(group_keys, as_index=False)
-        .apply(_weighted_mean)
+        .apply(_weighted_mean, include_groups=False)
         .reset_index(drop=True)
     )
     return merged
