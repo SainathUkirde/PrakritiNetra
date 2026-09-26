@@ -55,6 +55,7 @@ from blending import (
     blend_forecast, flag_extremes,
     compute_blend_skill_all_leads, EXTREME_THRESHOLDS,
 )
+from config import GFS_DIR, GEFS_DIR, ERA5_DIR, PANGU_DIR
 
 
 # ── helpers ────────────────────────────────────────────────────────────────────
@@ -73,11 +74,12 @@ def _ensure_dir(path: Path) -> Path:
 
 def step_load():
     _log("STEP 1 — Loading real dataset (GFS + GEFS + Pangu + ERA5)")
+    _log(f"  Datasets root: {Path(GFS_DIR).parent}")
     ds = _load_real_dataset(
-        gfs_dir=str(_HERE / "datasets" / "gfs"),
-        gefs_dir=str(_HERE / "datasets" / "gefs"),
-        era5_dir=str(_HERE / "datasets" / "era5"),
-        pangu_dir=str(_HERE / "datasets" / "pangu"),
+        gfs_dir=GFS_DIR,
+        gefs_dir=GEFS_DIR,
+        era5_dir=ERA5_DIR,
+        pangu_dir=PANGU_DIR,
     )
     _log(f"  Dataset loaded: {dict(ds.sizes)} | variables: {list(ds.data_vars)}")
     return ds

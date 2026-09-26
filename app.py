@@ -47,6 +47,7 @@ _HERE = Path(__file__).parent
 sys.path.insert(0, str(_HERE))
 
 from logo_loader import get_logo_html
+from config import GFS_DIR, GEFS_DIR, ERA5_DIR, PANGU_DIR, DATASETS_ROOT
 
 # ─────────────────────────────────────────────────────────────
 # Streamlit page config (must be first Streamlit call)
@@ -257,10 +258,10 @@ from blending import blend_forecast, flag_extremes, compute_blend_skill_all_lead
 def load_pipeline(method: str = "kmeans", n_regimes: int = 3):
     """Cache the full pipeline; re-runs only when params change."""
     ds = load_dataset(
-        gfs_dir=str(_HERE / "datasets" / "gfs"),
-        gefs_dir=str(_HERE / "datasets" / "gefs"),
-        era5_dir=str(_HERE / "datasets" / "era5"),
-        pangu_dir=str(_HERE / "datasets" / "pangu"),
+        gfs_dir=GFS_DIR,
+        gefs_dir=GEFS_DIR,
+        era5_dir=ERA5_DIR,
+        pangu_dir=PANGU_DIR,
     )
     clf, regimes = fit_and_classify(ds, n_regimes=n_regimes, method=method)
     skill_df = compute_skill_scores(ds, regimes)
@@ -539,8 +540,8 @@ with st.sidebar:
     st.markdown("---")
     st.markdown(
         f"<div style='font-size:0.75rem; color:{_TEXT_FAINT};'>"
-        "Data source: <b>Real GFS (NOAA NOMADS)</b> — India domain (8–37°N, 68–97°E). "
-        "Files loaded from <code>datasets/gfs/</code>."
+        "Data source: <b>Real GFS (NOAA NOMADS)</b> — India domain (8–37°N, 68–97°E).<br>"
+        f"Datasets: <code>{DATASETS_ROOT}</code>"
         "</div>", unsafe_allow_html=True
     )
 
