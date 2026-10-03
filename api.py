@@ -59,10 +59,10 @@ app.add_middleware(
 # Pipeline singleton (loaded once at startup)
 # ──────────────────────────────────────────────────────────────────────────────
 _DATASETS_DIR = _HERE / "datasets"
-_REAL_DATA_AVAIL = (
-    (_DATASETS_DIR / "gfs").exists() and
-    any((_DATASETS_DIR / "gfs").iterdir()) if (_DATASETS_DIR / "gfs").exists() else False
-)
+
+def _real_data_available() -> bool:
+    gfs = _DATASETS_DIR / "gfs"
+    return gfs.exists() and any(gfs.iterdir())
 
 _pipeline_cache: dict = {}
 
@@ -70,14 +70,25 @@ _pipeline_cache: dict = {}
 def _get_pipeline(method: str = "kmeans", n_regimes: int = 3) -> dict:
     key = (method, n_regimes)
     if key not in _pipeline_cache:
-        if _REAL_DATA_AVAIL:
-            ds = _load_real(
-                gfs_dir=str(_DATASETS_DIR / "gfs"),
-                gefs_dir=str(_DATASETS_DIR / "gefs"),
-                era5_dir=str(_DATASETS_DIR / "era5"),
-                pangu_dir=str(_DATASETS_DIR / "pangu"),
-            )
-        else:
+        ds = None
+        if _real_data_available():
+            try:
+                ds = _load_real(
+                    gfs_dir=str(_DATASETS_DIR / "gfs"),
+                    gefs_dir=str(_DATASETS_DIR / "gefs"),
+                    era5_dir=str(_DATASETS_DIR / "era5"),
+                    pangu_dir=str(_DATASETS_DIR / "pangu"),
+                )
+                # Validate: if all source arrays are NaN, treat as unavailable
+                import xarray as xr
+                nwp_vals = ds["nwp_rainfall"].values
+                if np.all(np.isnan(nwp_vals)):
+                    print("WARNING: real loader returned all-NaN arrays, falling back to synthetic")
+                    ds = None
+            except Exception as e:
+                print(f"WARNING: real loader failed ({e}), falling back to synthetic data")
+                ds = None
+        if ds is None:
             ds = _load_synthetic()
         clf, regimes = fit_and_classify(ds, n_regimes=n_regimes, method=method)
         skill_df = compute_skill_scores(ds, regimes)
@@ -111,7 +122,7 @@ def get_config():
         "lead_times": LEAD_TIMES,
         "sources": SOURCES,
         "domain": {"lat_min": 8.0, "lat_max": 37.0, "lon_min": 68.0, "lon_max": 97.0},
-        "real_data": _REAL_DATA_AVAIL,
+        "real_data": _real_data_available(),
     }
 
 

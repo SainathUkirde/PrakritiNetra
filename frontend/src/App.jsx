@@ -142,12 +142,26 @@ export default function App() {
   }, [])
 
   // Re-fetch pipeline when method/nRegimes change
+  // Render free tier cold-starts can take up to 60s — retry up to 4 times
   useEffect(() => {
+    let cancelled = false
     setLoading(true)
-    fetchPipeline(method, nRegimes)
-      .then(p => { setPipeline(p); setTimeIdx(Math.floor(p.n_times / 2)) })
-      .catch(e => setError(e.message))
-      .finally(() => setLoading(false))
+    const attempt = (retries) => {
+      fetchPipeline(method, nRegimes)
+        .then(p => {
+          if (!cancelled) { setPipeline(p); setTimeIdx(Math.floor(p.n_times / 2)) }
+        })
+        .catch(e => {
+          if (!cancelled && retries > 0) {
+            setTimeout(() => attempt(retries - 1), 15000)
+          } else if (!cancelled) {
+            setError(e.message)
+          }
+        })
+        .finally(() => { if (!cancelled) setLoading(false) })
+    }
+    attempt(4)
+    return () => { cancelled = true }
   }, [method, nRegimes])
 
   // Re-fetch forecast + skill + extreme when any selector changes
@@ -207,7 +221,7 @@ export default function App() {
         </p>
         {loading && (
           <div style={{ marginTop: 4, fontSize: '0.75rem', color: '#f59e0b' }}>
-            ⏳ Loading pipeline…
+            ⏳ Loading pipeline… (first load may take ~60s while Render wakes up)
           </div>
         )}
       </div>
