@@ -12,6 +12,7 @@ GET  /api/pipeline              run full pipeline; returns skill summary
 GET  /api/forecast              blended + source forecasts for a time step
 GET  /api/skill                 RMSE bar-chart data across all lead times
 GET  /api/extreme               extreme-weather indicator tiles + flag maps
+GET  /api/weights               per-source spatial weight maps
 
 Run locally:
     uvicorn api:app --reload --port 8000
@@ -61,6 +62,17 @@ app.add_middleware(
 _DATASETS_DIR = _HERE / "datasets"
 
 def _real_data_available() -> bool:
+    """
+    Returns True only when:
+      1. The USE_SYNTHETIC env var is NOT set to '1' or 'true', AND
+      2. datasets/gfs/ exists and contains at least one entry.
+
+    Set USE_SYNTHETIC=1 in render.yaml (or any deployment env) to force
+    synthetic data when the GRIB2 dataset files are not deployed.
+    """
+    import os
+    if os.environ.get("USE_SYNTHETIC", "0").strip().lower() in ("1", "true", "yes"):
+        return False
     gfs = _DATASETS_DIR / "gfs"
     return gfs.exists() and any(gfs.iterdir())
 
@@ -255,3 +267,36 @@ def get_extreme(
             "flag_grid": farr.astype(int).tolist(),
         }
     return {"time": times[time_index].strftime("%Y-%m-%d %H:%M"), "hazards": result}
+
+
+@app.get("/api/weights")
+def get_weights_map(
+    variable: str = Query("rainfall", enum=VARIABLES),
+    lead_time: int = Query(24, enum=LEAD_TIMES),
+    season: str = Query("monsoon"),
+    regime: str = Query("clear"),
+    method: str = Query("kmeans", enum=["kmeans", "gmm"]),
+    n_regimes: int = Query(3, ge=2, le=5),
+):
+    """Return per-source spatial weight maps (n_lat × n_lon) for the given context."""
+    p = _get_pipeline(method, n_regimes)
+    ds, wt = p["ds"], p["wt"]
+    lats = ds.coords["lat"].values.tolist()
+    lons = ds.coords["lon"].values.tolist()
+
+    source_maps = {}
+    for src in SOURCES:
+        wmap = get_weight_map(wt, ds, variable, lead_time, season, regime, source=src)
+        source_maps[src] = np.where(np.isnan(wmap), None, wmap).tolist()
+
+    # Dominant source index map (numeric: 0/1/2 matching sorted SOURCES order)
+    dom_map = get_weight_map(wt, ds, variable, lead_time, season, regime)
+    dom_serialised = np.where(np.isnan(dom_map), None, dom_map).tolist()
+
+    return {
+        "lats": lats,
+        "lons": lons,
+        "sources": SOURCES,
+        "source_maps": source_maps,
+        "dominant_map": dom_serialised,
+    }

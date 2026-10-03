@@ -255,10 +255,20 @@ from weighting import build_weight_table, get_weight_map, get_weights
 from blending import blend_forecast, flag_extremes, compute_blend_skill_all_leads, EXTREME_THRESHOLDS
 
 _DATASETS_DIR   = _HERE / "datasets"
-_REAL_DATA_AVAIL = (
-    (_DATASETS_DIR / "gfs").exists() and
-    any((_DATASETS_DIR / "gfs").iterdir()) if (_DATASETS_DIR / "gfs").exists() else False
-)
+
+def _real_data_available() -> bool:
+    """
+    Returns True only when USE_SYNTHETIC is not set AND the GFS folder is populated.
+    Set USE_SYNTHETIC=1 in Render environment variables to force synthetic demo data
+    when the GRIB2 dataset files are not deployed to the server.
+    """
+    import os
+    if os.environ.get("USE_SYNTHETIC", "0").strip().lower() in ("1", "true", "yes"):
+        return False
+    gfs = _DATASETS_DIR / "gfs"
+    return gfs.exists() and any(gfs.iterdir())
+
+_REAL_DATA_AVAIL = _real_data_available()
 
 
 @st.cache_resource(show_spinner="Loading and processing data…")

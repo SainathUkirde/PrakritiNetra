@@ -3,7 +3,7 @@ import {
   BarChart, Bar, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer,
   LineChart, Line, CartesianGrid,
 } from 'recharts'
-import { fetchConfig, fetchPipeline, fetchForecast, fetchSkill, fetchExtreme } from './api'
+import { fetchConfig, fetchPipeline, fetchForecast, fetchSkill, fetchExtreme, fetchWeightMap } from './api'
 
 // ── colour tokens ────────────────────────────────────────────────────────────
 const BG       = '#0f1117'
@@ -75,38 +75,67 @@ function Badge({ label, regime }) {
 }
 
 // Simple grid heatmap using SVG
+// Parse a 6-digit hex colour string (#rrggbb) into [r, g, b] components.
+// Falls back to a safe neutral if the string is not a valid hex colour.
+function _hexToRgb(hex) {
+  const m = /^#([0-9a-f]{2})([0-9a-f]{2})([0-9a-f]{2})$/i.exec(hex)
+  return m ? [parseInt(m[1], 16), parseInt(m[2], 16), parseInt(m[3], 16)] : [96, 165, 250]
+}
+
 function HeatmapSVG({ grid, lats, lons, title, colorHigh = '#3b82f6', unit = '' }) {
-  if (!grid || !lats || !lons) return <div style={{ color: MUTED }}>Loading…</div>
+  if (!grid || !lats || !lons) return <div style={{ color: MUTED, fontSize: '0.8rem' }}>Loading…</div>
   const rows = grid.length
   const cols = grid[0]?.length || 0
   if (!rows || !cols) return null
 
-  const flat = grid.flat().filter(v => v !== null)
-  const vmin = Math.min(...flat)
-  const vmax = Math.max(...flat)
+  const flat = grid.flat().filter(v => v !== null && isFinite(v))
+
+  // If all values are null / NaN — show a "no data" placeholder instead of crashing
+  if (flat.length === 0) {
+    return (
+      <div>
+        <div style={{ fontSize: '0.78rem', fontWeight: 600, color: TEXT, marginBottom: 4 }}>{title}</div>
+        <div style={{ width: '100%', height: 160, borderRadius: 6, background: '#1a1f2e',
+                      display: 'flex', alignItems: 'center', justifyContent: 'center',
+                      fontSize: '0.75rem', color: MUTED }}>
+          No data for this selection
+        </div>
+      </div>
+    )
+  }
+
+  const vmin  = Math.min(...flat)
+  const vmax  = Math.max(...flat)
   const range = vmax - vmin || 1
+  const [hr, hg, hb] = _hexToRgb(colorHigh)
 
-  const cellW = 240 / cols
-  const cellH = 160 / rows
-
+  // Dark base colour: #0f1117 = rgb(15,17,23)
   const lerp = v => {
     const t = (v - vmin) / range
-    const r = Math.round(15  + t * (parseInt(colorHigh.slice(1, 3), 16) - 15))
-    const g = Math.round(24  + t * (parseInt(colorHigh.slice(3, 5), 16) - 24))
-    const b = Math.round(46  + t * (parseInt(colorHigh.slice(5, 7), 16) - 46))
+    const r = Math.round(15 + t * (hr - 15))
+    const g = Math.round(17 + t * (hg - 17))
+    const b = Math.round(23 + t * (hb - 23))
     return `rgb(${r},${g},${b})`
   }
+
+  // Use viewBox so the SVG fills its container responsively
+  const VW = cols * 10
+  const VH = rows * 10
+  const cellW = VW / cols
+  const cellH = VH / rows
 
   return (
     <div>
       <div style={{ fontSize: '0.78rem', fontWeight: 600, color: TEXT, marginBottom: 4 }}>{title}</div>
-      <svg width={240} height={160} style={{ borderRadius: 6, overflow: 'hidden' }}>
+      <svg viewBox={`0 0 ${VW} ${VH}`} width="100%" height={160}
+           preserveAspectRatio="none"
+           style={{ borderRadius: 6, overflow: 'hidden', display: 'block' }}>
         {grid.map((row, ri) =>
           row.map((v, ci) => (
             <rect key={`${ri}-${ci}`}
               x={ci * cellW} y={ri * cellH}
               width={cellW} height={cellH}
-              fill={v === null ? '#1a1f2e' : lerp(v)}
+              fill={v === null || !isFinite(v) ? '#1a1f2e' : lerp(v)}
             />
           ))
         )}
@@ -126,6 +155,7 @@ export default function App() {
   const [forecast, setForecast]   = useState(null)
   const [skill, setSkill]         = useState(null)
   const [extreme, setExtreme]     = useState(null)
+  const [weightMaps, setWeightMaps] = useState(null)
   const [loading, setLoading]     = useState(false)
   const [error, setError]         = useState(null)
 
@@ -164,17 +194,22 @@ export default function App() {
     return () => { cancelled = true }
   }, [method, nRegimes])
 
-  // Re-fetch forecast + skill + extreme when any selector changes
+  // Re-fetch forecast + skill + extreme + weight maps when any selector changes
   const refresh = useCallback(() => {
     if (!pipeline) return
     setLoading(true)
+    const regimes  = pipeline?.regimes  || []
+    const seasons  = pipeline?.seasons  || []
+    const curRegime = regimes[timeIdx]  || 'clear'
+    const curSeason = seasons[timeIdx]  || 'monsoon'
     const params = { variable, leadTime, timeIndex: timeIdx, method, nRegimes }
     Promise.all([
       fetchForecast(params),
       fetchSkill({ variable, method, nRegimes }),
       fetchExtreme({ leadTime, timeIndex: timeIdx, method, nRegimes }),
+      fetchWeightMap({ variable, leadTime, season: curSeason, regime: curRegime, method, nRegimes }),
     ])
-      .then(([f, s, e]) => { setForecast(f); setSkill(s); setExtreme(e) })
+      .then(([f, s, e, w]) => { setForecast(f); setSkill(s); setExtreme(e); setWeightMaps(w) })
       .catch(e => setError(e.message))
       .finally(() => setLoading(false))
   }, [pipeline, variable, leadTime, timeIdx, method, nRegimes])
@@ -359,20 +394,43 @@ export default function App() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: '0.75rem' }}>
             {(['nwp','ensemble','ai']).map(src => {
               const icons = { nwp: '🏗️', ensemble: '🧩', ai: '🤖' }
+              const srcDesc = {
+                nwp:      'Physical NWP — accurate short-term, degrades fast.',
+                ensemble: 'Ensemble — smooth, underestimates extremes.',
+                ai:       'AI/ML model — stable at long lead times.',
+              }
               const arr = forecast?.[src]
               return (
                 <Card key={src}>
-                  {arr ? (
-                    <HeatmapSVG grid={arr} lats={forecast?.lats} lons={forecast?.lons}
-                      title={`${icons[src]} ${src.toUpperCase()}`}
-                      colorHigh={SOURCE_COLORS[src]}
-                      unit={variable === 'rainfall' ? 'mm' : variable === 'temperature' ? '°C' : 'm/s'} />
-                  ) : (
+                  {/* forecast not yet loaded → spinner */}
+                  {!forecast ? (
                     <div style={{ height: 160, display: 'flex', alignItems: 'center',
                                   justifyContent: 'center', flexDirection: 'column', color: MUTED }}>
                       <div style={{ fontSize: '1.5rem' }}>{icons[src]}</div>
                       <div style={{ fontWeight: 600, marginTop: 4 }}>{src.toUpperCase()}</div>
-                      <div style={{ fontSize: '0.72rem', marginTop: 2 }}>No data</div>
+                      <div style={{ fontSize: '0.72rem', marginTop: 2 }}>Loading…</div>
+                    </div>
+                  ) : arr ? (
+                    /* forecast loaded AND this source has data */
+                    <>
+                      <HeatmapSVG grid={arr} lats={forecast.lats} lons={forecast.lons}
+                        title={`${icons[src]} ${src.toUpperCase()}`}
+                        colorHigh={SOURCE_COLORS[src]}
+                        unit={variable === 'rainfall' ? 'mm' : variable === 'temperature' ? '°C' : 'm/s'} />
+                      <div style={{ fontSize: '0.68rem', color: MUTED, marginTop: 4 }}>
+                        {srcDesc[src]}
+                      </div>
+                    </>
+                  ) : (
+                    /* forecast loaded but this source missing (real-data GFS-only mode) */
+                    <div style={{ height: 160, display: 'flex', alignItems: 'center',
+                                  justifyContent: 'center', flexDirection: 'column', color: MUTED }}>
+                      <div style={{ fontSize: '1.5rem' }}>{icons[src]}</div>
+                      <div style={{ fontWeight: 600, marginTop: 4 }}>{src.toUpperCase()}</div>
+                      <div style={{ fontSize: '0.72rem', marginTop: 2, textAlign: 'center' }}>
+                        No data available<br />
+                        <span style={{ color: LABEL }}>Add {src.toUpperCase()} files to enable</span>
+                      </div>
                     </div>
                   )}
                 </Card>
@@ -427,6 +485,52 @@ export default function App() {
               </ResponsiveContainer>
             </Card>
           ) : null}
+
+          {/* Weight maps */}
+          <SectionHead>🗺️ Model Weight Maps</SectionHead>
+          {weightMaps ? (
+            <>
+              <div style={{ fontSize: '0.75rem', color: MUTED, marginBottom: '0.5rem' }}>
+                How much each model is trusted in each region for the current variable,
+                lead time, season and weather regime. Brighter cells = higher trust.
+              </div>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: '0.75rem', marginBottom: '0.75rem' }}>
+                {(weightMaps.sources || []).map(src => {
+                  const icons = { nwp: '🏗️', ensemble: '🧩', ai: '🤖' }
+                  const grid = weightMaps.source_maps?.[src]
+                  return (
+                    <Card key={src}>
+                      <HeatmapSVG
+                        grid={grid}
+                        lats={weightMaps.lats}
+                        lons={weightMaps.lons}
+                        title={`${icons[src] || ''} ${src.toUpperCase()} Weight`}
+                        colorHigh={SOURCE_COLORS[src] || '#60a5fa'}
+                        unit="weight"
+                      />
+                    </Card>
+                  )
+                })}
+              </div>
+              <Card>
+                <HeatmapSVG
+                  grid={weightMaps.dominant_map}
+                  lats={weightMaps.lats}
+                  lons={weightMaps.lons}
+                  title="Dominant Source Map — most-trusted model per region"
+                  colorHigh="#6366f1"
+                  unit="index"
+                />
+                <div style={{ fontSize: '0.72rem', color: MUTED, marginTop: 4 }}>
+                  Each cell is coloured by the model index with the highest weight for the
+                  current variable / lead / season / regime.
+                </div>
+              </Card>
+            </>
+          ) : (
+            <Card style={{ height: 100, display: 'flex', alignItems: 'center',
+                           justifyContent: 'center', color: MUTED }}>Loading…</Card>
+          )}
 
           {/* Extreme weather */}
           <SectionHead>⚡ Extreme Weather Indicators</SectionHead>

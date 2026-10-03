@@ -12,6 +12,14 @@ Datasets folder resolution order (first path that exists wins):
 Set the env var to point at your data wherever it lives:
     Windows:  set PRAKRITI_DATASETS_DIR=C:\\path\\to\\forecast_blend\\datasets
     Linux:    export PRAKRITI_DATASETS_DIR=/path/to/forecast_blend/datasets
+
+USE_SYNTHETIC environment variable
+-----------------------------------
+Setting USE_SYNTHETIC=1 forces synthetic demo data even when the datasets/
+folder is present. This is the recommended setting for Render free-tier
+deployments where attaching a 600 MB disk is not practical.
+To enable real data on Render, upgrade to a paid plan, attach a persistent
+disk (≥ 1 GB), upload your datasets/ folder there, and set USE_SYNTHETIC=0.
 """
 from __future__ import annotations
 

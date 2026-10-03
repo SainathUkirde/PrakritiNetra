@@ -1,4 +1,5 @@
 services:
+  # ── FastAPI backend (consumed by the React/Vercel frontend) ──────────────────
   - type: web
     name: prakriti-netra-api
     runtime: python
@@ -6,5 +7,26 @@ services:
     startCommand: uvicorn api:app --host 0.0.0.0 --port $PORT
     envVars:
       - key: PYTHON_VERSION
-        value: 3.11.0
+        value: "3.11.0"
+      # Set USE_SYNTHETIC=1 to force synthetic data (datasets/ not deployed to Render).
+      # Remove or set to 0 once you mount a persistent disk with real GRIB2 files.
+      - key: USE_SYNTHETIC
+        value: "1"
     healthCheckPath: /
+    # System package: libeccodes-dev is listed in packages.txt — Render installs it
+    # automatically before the buildCommand when packages.txt is present.
+
+  # ── Streamlit dashboard (the full-feature app.py UI) ─────────────────────────
+  - type: web
+    name: prakriti-netra-dashboard
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: streamlit run app.py --server.port $PORT --server.address 0.0.0.0 --server.headless true
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.11.0"
+      # Force synthetic data on Render until a persistent disk with datasets/ is attached.
+      - key: USE_SYNTHETIC
+        value: "1"
+    healthCheckPath: /
+    # packages.txt (libeccodes-dev) is picked up automatically by Render for both services.
