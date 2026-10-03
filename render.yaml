@@ -1,22 +1,8 @@
 services:
-  # ── FastAPI backend (consumed by the React/Vercel frontend) ──────────────────
-  - type: web
-    name: prakriti-netra-api
-    runtime: python
-    buildCommand: pip install -r requirements-api.txt
-    startCommand: uvicorn api:app --host 0.0.0.0 --port $PORT
-    envVars:
-      - key: PYTHON_VERSION
-        value: "3.11.0"
-      # Set USE_SYNTHETIC=1 to force synthetic data (datasets/ not deployed to Render).
-      # Remove or set to 0 once you mount a persistent disk with real GRIB2 files.
-      - key: USE_SYNTHETIC
-        value: "1"
-    healthCheckPath: /
-    # System package: libeccodes-dev is listed in packages.txt — Render installs it
-    # automatically before the buildCommand when packages.txt is present.
-
-  # ── Streamlit dashboard (the full-feature app.py UI) ─────────────────────────
+  # ── Streamlit dashboard — full-feature app.py (Plotly maps, all 5 features) ──
+  # This is the primary deployed service. It runs app.py directly on Render,
+  # identical to the Streamlit Cloud deployment — same Plotly heatmaps, hover,
+  # sector blending, confidence scores, alerts, feedback loop, weight maps.
   - type: web
     name: prakriti-netra-dashboard
     runtime: python
@@ -25,8 +11,20 @@ services:
     envVars:
       - key: PYTHON_VERSION
         value: "3.11.0"
-      # Force synthetic data on Render until a persistent disk with datasets/ is attached.
       - key: USE_SYNTHETIC
         value: "1"
     healthCheckPath: /
-    # packages.txt (libeccodes-dev) is picked up automatically by Render for both services.
+
+  # ── FastAPI backend — only needed if you use the React/Vercel frontend ────────
+  # You can ignore this service if you only use the Streamlit dashboard above.
+  - type: web
+    name: prakriti-netra-api
+    runtime: python
+    buildCommand: pip install -r requirements-api.txt
+    startCommand: uvicorn api:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.11.0"
+      - key: USE_SYNTHETIC
+        value: "1"
+    healthCheckPath: /
