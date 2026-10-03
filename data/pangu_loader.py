@@ -15,12 +15,13 @@ File structure (from download_pangu.py):
     10m_u_component_of_wind  (m/s)
     10m_v_component_of_wind  (m/s)
     10m_wind_speed           (m/s, pre-computed magnitude)
-    NOTE: no precipitation — ai_rainfall stays NaN.
+    NOTE: no precipitation output — ai_rainfall is derived in real_loader.py
+          as a GFS-based proxy with AI-characteristic bias/noise.
 
 Output per cycle dict:
     {
       "init_time"  : pd.Timestamp,
-      "rainfall"   : (n_lead, n_lat, n_lon)  — all NaN (no precip in Pangu)
+      "rainfall"   : (n_lead, n_lat, n_lon)  — all NaN here; proxy filled in real_loader.py
       "temperature": (n_lead, n_lat, n_lon)  — °C
       "wind"       : (n_lead, n_lat, n_lon)  — m/s
     }
@@ -106,7 +107,7 @@ def load_pangu_cycles(pangu_dir: Path, tgt_lats: np.ndarray,
 
     for ti in range(len(ds_all.coords["time"])):
         init_time = pd.Timestamp(ds_all.coords["time"].values[ti])
-        rain_arr  = np.full((n_lead, n_lat, n_lon), np.nan)  # Pangu has no precip
+        rain_arr  = np.full((n_lead, n_lat, n_lon), np.nan)  # no precip; proxy added in real_loader
         temp_arr  = np.full((n_lead, n_lat, n_lon), np.nan)
         wind_arr  = np.full((n_lead, n_lat, n_lon), np.nan)
 

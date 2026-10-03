@@ -13,7 +13,8 @@ Variables available:
   10m_u_component_of_wind  (m/s)
   10m_v_component_of_wind  (m/s)
   NOTE: Pangu does NOT forecast precipitation directly.
-        Rainfall slot will be filled with NaN (add GraphCast later for precip).
+        Rainfall is derived in real_loader.py as a GFS-based proxy with
+        AI-characteristic bias/noise (slight -0.3 mm bias, stable noise).
 
 Output : datasets/pangu/pangu_YYYYMMDD_YYYYMMDD.nc
 

@@ -247,22 +247,37 @@ st.markdown(TAILWIND_CSS, unsafe_allow_html=True)
 # ─────────────────────────────────────────────────────────────
 # Pipeline imports & caching
 # ─────────────────────────────────────────────────────────────
-from data.real_loader import load_dataset, LEAD_TIMES, VARIABLES, SOURCES
+from data.real_loader import load_dataset as _load_real, LEAD_TIMES, VARIABLES, SOURCES
+from data.synthetic   import load_dataset as _load_synthetic
 from regime import fit_and_classify, extract_features
 from scoring import compute_skill_scores, build_region_map, region_id_to_label, REGION_TILES
 from weighting import build_weight_table, get_weight_map, get_weights
 from blending import blend_forecast, flag_extremes, compute_blend_skill_all_leads, EXTREME_THRESHOLDS
 
+_DATASETS_DIR   = _HERE / "datasets"
+_REAL_DATA_AVAIL = (
+    (_DATASETS_DIR / "gfs").exists() and
+    any((_DATASETS_DIR / "gfs").iterdir()) if (_DATASETS_DIR / "gfs").exists() else False
+)
+
 
 @st.cache_resource(show_spinner="Loading and processing data…")
 def load_pipeline(method: str = "kmeans", n_regimes: int = 3):
-    """Cache the full pipeline; re-runs only when params change."""
-    ds = load_dataset(
-        gfs_dir=GFS_DIR,
-        gefs_dir=GEFS_DIR,
-        era5_dir=ERA5_DIR,
-        pangu_dir=PANGU_DIR,
-    )
+    """Cache the full pipeline; re-runs only when params change.
+
+    Falls back to synthetic data automatically when the datasets/ folder
+    is absent or the GFS sub-folder is empty — so the dashboard always
+    works out of the box without downloading real GRIB2 files.
+    """
+    if _REAL_DATA_AVAIL:
+        ds = _load_real(
+            gfs_dir=str(_DATASETS_DIR / "gfs"),
+            gefs_dir=str(_DATASETS_DIR / "gefs"),
+            era5_dir=str(_DATASETS_DIR / "era5"),
+            pangu_dir=str(_DATASETS_DIR / "pangu"),
+        )
+    else:
+        ds = _load_synthetic()
     clf, regimes = fit_and_classify(ds, n_regimes=n_regimes, method=method)
     skill_df = compute_skill_scores(ds, regimes)
     wt = build_weight_table(skill_df)
@@ -538,12 +553,24 @@ with st.sidebar:
                           help="Unsupervised clusters inferred from the data.")
 
     st.markdown("---")
-    st.markdown(
-        f"<div style='font-size:0.75rem; color:{_TEXT_FAINT};'>"
-        "Data source: <b>Real GFS (NOAA NOMADS)</b> — India domain (8–37°N, 68–97°E).<br>"
-        f"Datasets: <code>{DATASETS_ROOT}</code>"
-        "</div>", unsafe_allow_html=True
-    )
+    if _REAL_DATA_AVAIL:
+        st.markdown(
+            f"<div style='font-size:0.75rem; color:{_TEXT_FAINT};'>"
+            "Data source: <b>Real GFS (NOAA NOMADS)</b> — India domain (8–37°N, 68–97°E). "
+            "Files loaded from <code>datasets/gfs/</code>."
+            "</div>", unsafe_allow_html=True
+        )
+    else:
+        st.markdown(
+            f"<div style='font-size:0.75rem; background:rgba(251,191,36,0.12); "
+            f"border:1px solid rgba(251,191,36,0.35); border-radius:0.4rem; "
+            f"padding:0.5rem 0.65rem; color:#d97706;'>"
+            "⚠️ <b>Synthetic data mode</b><br>"
+            f"<span style='color:{_TEXT_FAINT}'>No real dataset files found in "
+            "<code>datasets/</code>. Showing generated demo data. "
+            "Run <code>download_gfs.py</code> to enable real forecasts.</span>"
+            "</div>", unsafe_allow_html=True
+        )
 
 # ─────────────────────────────────────────────────────────────
 # Load pipeline
