@@ -1683,34 +1683,85 @@ if _ALERTS_OK:
     else:
         st.success("✅ No alerts triggered for current selection.")
 
-    # District map
+    # District map — one scatter dot per district centroid, always visible
     st.markdown("**Alert map — district severity**")
-    district_map_arr = build_district_map(lats, lons)
-    sev_int_map = np.zeros((len(lats), len(lons)))
-    sev_to_int = {"WATCH": 1, "WARNING": 2, "SEVERE": 3}
-    if current_alerts:
-        dist_sev = {a["district"]: sev_to_int.get(a["severity"], 0) for a in current_alerts}
-        for i in range(len(lats)):
-            for j in range(len(lons)):
-                d = str(district_map_arr[i, j])
-                sev_int_map[i, j] = dist_sev.get(d, 0)
+    from alerts import _LAT_BOUNDS, _LON_BOUNDS, _N_DIST_LAT, _N_DIST_LON, _DISTRICT_NAMES
 
-    fig_alert_map = go.Figure(go.Heatmap(
-        z=sev_int_map,
-        x=lons, y=lats,
+    # Severity colour palette for scatter markers
+    _SEV_COLORS = {
+        "WATCH":   "#fbbf24",
+        "WARNING": "#fb923c",
+        "SEVERE":  "#f87171",
+        "None":    "#475569",
+    }
+    _SEV_SIZES = {"WATCH": 14, "WARNING": 16, "SEVERE": 20, "None": 10}
+
+    # Build one record per district centroid
+    dist_sev_lookup = {a["district"]: a["severity"] for a in current_alerts}
+    _lat_step = (_LAT_BOUNDS[1] - _LAT_BOUNDS[0]) / _N_DIST_LAT
+    _lon_step = (_LON_BOUNDS[1] - _LON_BOUNDS[0]) / _N_DIST_LON
+    _dot_lats, _dot_lons, _dot_labels, _dot_colors, _dot_sizes, _dot_text = [], [], [], [], [], []
+    for _row in range(_N_DIST_LAT):
+        for _col in range(_N_DIST_LON):
+            _clat = _LAT_BOUNDS[0] + (_row + 0.5) * _lat_step
+            _clon = _LON_BOUNDS[0] + (_col + 0.5) * _lon_step
+            _dname = _DISTRICT_NAMES[_row][_col]
+            _sev = dist_sev_lookup.get(_dname, "None")
+            _dot_lats.append(_clat)
+            _dot_lons.append(_clon)
+            _dot_labels.append(_dname)
+            _dot_colors.append(_SEV_COLORS[_sev])
+            _dot_sizes.append(_SEV_SIZES[_sev])
+            _dot_text.append(f"<b>{_dname}</b><br>Severity: {_sev}")
+
+    fig_alert_map = go.Figure()
+    # Background heatmap showing the 4×4 district tiles (always drawn, value=0)
+    _tile_lats = [_LAT_BOUNDS[0] + (_r + 0.5) * _lat_step for _r in range(_N_DIST_LAT)]
+    _tile_lons = [_LON_BOUNDS[0] + (_c + 0.5) * _lon_step for _c in range(_N_DIST_LON)]
+    _tile_z = [[0] * _N_DIST_LON for _ in range(_N_DIST_LAT)]
+    if current_alerts:
+        _dist_sev_int = {a["district"]: {"WATCH": 1, "WARNING": 2, "SEVERE": 3}.get(a["severity"], 0)
+                         for a in current_alerts}
+        for _row in range(_N_DIST_LAT):
+            for _col in range(_N_DIST_LON):
+                _dname = _DISTRICT_NAMES[_row][_col]
+                _tile_z[_row][_col] = _dist_sev_int.get(_dname, 0)
+    fig_alert_map.add_trace(go.Heatmap(
+        z=_tile_z,
+        x=_tile_lons,
+        y=_tile_lats,
         colorscale=[
-            [0.0,  "#1a1f2e"],
-            [0.34, "#92400e"],
-            [0.67, "#c2410c"],
-            [1.0,  "#991b1b"],
+            [0.0,  "rgba(26,31,46,0.6)"],
+            [0.34, "rgba(146,64,14,0.55)"],
+            [0.67, "rgba(194,65,12,0.6)"],
+            [1.0,  "rgba(153,27,27,0.65)"],
         ],
         zmin=0, zmax=3,
+        showscale=True,
         colorbar=_map_colorbar(
             "Severity",
             tickvals=[0, 1, 2, 3],
             ticktext=["None", "WATCH", "WARNING", "SEVERE"],
         ),
-        hovertemplate="Lat: %{y:.1f}°<br>Lon: %{x:.1f}°<br>Severity: %{z}<extra></extra>",
+        hoverinfo="skip",
+        xgap=2, ygap=2,
+    ))
+    # Scatter dots — one per district centroid, always visible
+    fig_alert_map.add_trace(go.Scatter(
+        x=_dot_lons,
+        y=_dot_lats,
+        mode="markers+text",
+        marker=dict(
+            color=_dot_colors,
+            size=_dot_sizes,
+            line=dict(color="#0f1117", width=1.5),
+        ),
+        text=[n.split()[0] for n in _dot_labels],   # first word as label
+        textposition="top center",
+        textfont=dict(size=8, color=_MAP_TEXT),
+        customdata=_dot_text,
+        hovertemplate="%{customdata}<extra></extra>",
+        showlegend=False,
     ))
     fig_alert_map.update_layout(
         title=dict(
@@ -1723,7 +1774,7 @@ if _ALERTS_OK:
         font=dict(color=_MAP_TEXT),
         xaxis=_map_axis("Longitude"),
         yaxis=_map_axis("Latitude"),
-        height=300,
+        height=320,
     )
     st.plotly_chart(fig_alert_map, use_container_width=True,
                     config={"displayModeBar": False})
